@@ -6,6 +6,7 @@ import { RouterLink } from 'vue-router';
   <header>
       <RouterLink class="nav-link" to="/">Home</RouterLink>
       <RouterLink class="nav-link" to="/about">About</RouterLink>
+      <RouterLink class="nav-link" to="/login">Login</RouterLink>
       <button class="account-button" type="submit">Ingresar/Salir</button>
   </header>
 </template>

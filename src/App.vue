@@ -1,5 +1,5 @@
 <script setup>
-import {  RouterView } from 'vue-router';
+import { RouterView } from 'vue-router';
 import NavbarLayout from './components/NavbarLayout.vue';
 </script>
 
@@ -9,3 +9,9 @@ import NavbarLayout from './components/NavbarLayout.vue';
     <RouterView />
   </div>
 </template>
+
+<style>
+main {
+  width: 100%;
+}
+</style>
