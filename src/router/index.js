@@ -18,6 +18,19 @@ const router = createRouter({
       path: '/login',
       name: 'login',
       component: () => import('../views/LoginView.vue')
+    },
+    {
+      path: '/404',
+      component: import('../views/NotFoundView.vue')
+    },
+    {
+      // path: "*",
+      path: '/:catchAll(.*)',
+      name: 'NotFound',
+      component: import('../views/NotFoundView.vue'),
+      meta: {
+        requiresAuth: false
+      }
     }
   ]
 });
