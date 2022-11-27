@@ -1,12 +1,13 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+import '98.css';
 </script>
 
 <template>
-  <header>
-      <RouterLink class="nav-link" to="/">Home</RouterLink>
-      <RouterLink class="nav-link" to="/about">About</RouterLink>
-      <RouterLink class="nav-link" to="/login">Login</RouterLink>
+  <header class='title-bar'>
+      <RouterLink class="nav-link title-bar-text" to="/">Home</RouterLink>
+      <RouterLink class="nav-link title-bar-text" to="/about">About</RouterLink>
+      <RouterLink class="nav-link title-bar-text" to="/login">Login</RouterLink>
       <button class="account-button" type="submit">Ingresar/Salir</button>
   </header>
 </template>
@@ -53,21 +54,11 @@ header {
 
 /* Move account button to the right corner */
 .account-button {
-  background: #fafafa;
-  border: 1px solid #272727;
   float: right;
   margin: 0.5rem;
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-}
-
-.account-button:active {
-  background: #c1c1c1;
-  -webkit-box-shadow: inset 0px 0px 5px #141313;
-  -moz-box-shadow: inset 0px 0px 5px #141313;
-  box-shadow: inset 0px 0px 5px #141313;
-  outline: none;
 }
 </style>
