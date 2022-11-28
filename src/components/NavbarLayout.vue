@@ -7,8 +7,10 @@ import '98.css';
   <header class='title-bar'>
       <RouterLink class="nav-link title-bar-text" to="/">Home</RouterLink>
       <RouterLink class="nav-link title-bar-text" to="/about">About</RouterLink>
-      <RouterLink class="nav-link title-bar-text" to="/login">Login</RouterLink>
-      <button class="account-button" type="submit">Ingresar/Salir</button>
+      <RouterLink class="nav-link title-bar-text" to="/profile">My Profile</RouterLink>
+      <RouterLink class="nav-link title-bar-text" to="/login">
+        <button class="account-button">Ingresar/Salir</button>
+      </RouterLink>
   </header>
 </template>
 
